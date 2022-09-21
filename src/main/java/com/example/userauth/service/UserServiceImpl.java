@@ -1,7 +1,7 @@
 package com.example.userauth.service;
 
-import com.example.userauth.Repo.RoleRepo;
-import com.example.userauth.Repo.UserRepo;
+import com.example.userauth.repository.RoleRepo;
+import com.example.userauth.repository.UserRepo;
 import com.example.userauth.domains.appuser;
 import com.example.userauth.domains.role;
 import lombok.RequiredArgsConstructor;

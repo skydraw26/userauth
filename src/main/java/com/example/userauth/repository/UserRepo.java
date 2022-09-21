@@ -1,4 +1,4 @@
-package com.example.userauth.Repo;
+package com.example.userauth.repository;
 
 import com.example.userauth.domains.appuser;
 import org.springframework.data.jpa.repository.JpaRepository;

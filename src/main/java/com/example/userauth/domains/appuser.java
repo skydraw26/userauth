@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import static javax.persistence.FetchType.EAGER;
+import static javax.persistence.FetchType.LAZY;
 import static javax.persistence.GenerationType.AUTO;
 
 @Entity
@@ -23,4 +24,14 @@ public class appuser {
     private String password;
     @ManyToMany(fetch = EAGER)
     private Collection<role> roles = new ArrayList<>();
+    @OneToMany(fetch = LAZY)
+    private Collection<project> projects = new ArrayList<>();
+
+    public appuser(Long id, String name, String username, String password, Collection<role> roles) {
+        this.id = id;
+        this.name = name;
+        this.username = username;
+        this.password = password;
+        this.roles = roles;
+    }
 }
